@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEducation - Transforming The World Of Online Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar h-nav-resp">
+        <ul class="navlist v-class-resp">
+            <div class="logo">
+                <img src="logo.jpeg" alt="logo">
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightnav v-class-resp">
+            <input type="text" name="search" id="search" placeholder="search">
+        </div>
+        <div class="burger">
+            <!-- <div class="logo-burger">
+                <img src="images/logo.jpeg" alt="logo">
+            </div> -->
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="background firstsection" id="about">
+        <div class="boxmain">
+            <div class="firsthalf">
+                <p class="textbig" id="line1">TRANSFORMING THE WORLD OF</p>
+                <p class="textbig" id="line2">ONLINE EDUCATION</p>
+                <p class="textsmall">At VEducation, we believe in revolutionizing the realm of online education.
+                    Our commitment is to provide a seamless and enriching learning experience that empowers individuals
+                    worldwide. Harnessing the power of technology, we offer a diverse range of educational services
+                    tailored to meet the needs of learners at every stage of their academic journey.</p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Video</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="mainimg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="secondmain" id="services">
+
+        <!-- section1 -->
+        <section class="secondsection">
+            <div class="sect circle">
+                <div class="para">
+                    <p class="sectiontag">Unlocking Academic Success</p>
+                    <p class="sectionsubtag">As the landscape of education continues to evolve, mastering the art
+                        of online learning is essential for academic success. In this comprehensive guide, we explore
+                        proven strategies that empower students to thrive in the virtual classroom. From time management
+                        techniques tailored to online coursework to cultivating effective study habits in a digital
+                        environment, this content equips learners with the tools they need to excel in their educational
+                        journey.</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="sect2.png" alt="" class="imgfluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- section2 -->
+        <section class="secondsection">
+            <div class="sect leftsect circle">
+                <div class="para">
+                    <p class="sectiontag">Navigating the Digital Classroom</p>
+                    <p class="sectionsubtag">The digital classroom presents unique challenges and opportunities for both
+                        students and educators. This content serves as a compass for navigating the intricacies of
+                        online
+                        education. For students, we provide insights into selecting the right digital tools, staying
+                        organized, and fostering meaningful connections with peers and instructors. For educators, we
+                        offer
+                        guidance on creating engaging virtual lessons, leveraging interactive technologies, and
+                        cultivating
+                        an inclusive online learning environment.</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="sect3.png" alt="" class="imgfluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- section3 -->
+        <section class="secondsection">
+            <div class="sect third">
+                <div class="para">
+                    <p class="sectiontag">Mastering the Art of Online Collaboration</p>
+                    <p class="sectionsubtag">Collaboration lies at the heart of effective education, even in virtual
+                        settings. In this
+                        content piece, we delve into the nuances of successful online collaboration, focusing
+                        specifically on group projects.
+                        From establishing clear communication channels and setting realistic goals to leveraging
+                        collaborative platforms and
+                        managing time zones, we provide a roadmap for students to navigate group projects seamlessly in
+                        the online realm.
+                        This guide ensures that teamwork remains a strength rather than a challenge in the digital
+                        classroom.</p>
+                </div>
+                <div class="thumbnail">
+                    <img src="sect4.png" alt="" class="imgfluid">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h1 class="conthead">Contact Us</h1>
+        <div class="form">
+            <input class="forminput" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="forminput" type="text" name="text" id="text" placeholder="Enter your phone number">
+            <input class="forminput" type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea class="forminput" name="text" id="text" cols="47" rows="10" placeholder="Elaborate your concern"></textarea>
+            <button class="btn-con">Submit</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2024 VEducation - All rights reserved
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.getElementById('search').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                // Add any additional logic here if needed
+                this.value = ''; // Reset the search bar after pressing Enter
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

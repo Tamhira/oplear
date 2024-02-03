@@ -1,0 +1,447 @@
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*NAVIGATION BAR*/
+.navbar{
+    display: flex;
+    background-color: #020633;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid #a5ddfbf9;
+    position: sticky;
+    top: 0; /* Ensure it sticks to the top of the viewport */
+}
+
+/*LOGO AND NAV CONTENT*/
+.navlist{
+    display: flex;
+    width: 65%;
+    align-items: center;
+}
+.logo {
+    margin-right: auto; /* Push the logo to the extreme left */
+}
+.logo img{
+    width: 175px;
+    height: 50px;
+    margin: 5px 15px;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    padding: 5px 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #a5ddfbf9;
+    font-weight: bold;
+}
+.navlist li a:hover{
+    color: #020633;
+    background-color:#a5ddfbf9;
+    border-radius: 20px; 
+    font-size: 20px;
+}
+
+/*SEARCH CONTENT*/
+.rightnav{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: flex-end;
+}
+#search{
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 15px 35px;
+    border: none;
+}
+#search::placeholder {
+    font-style: italic;
+}
+
+/*HOME BG*/
+.firstsection{
+    /* height: 91vh; */
+    background: url(bg.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    border-bottom: 2px solid #a5ddfbf9;
+}
+
+/*HOME*/
+.boxmain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 60%; */
+    /* height: 90%; */
+    margin: auto;
+    padding: 145px 0px;
+}
+
+/*HOME CONTENT*/
+.firsthalf{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 125PX;
+}
+.textbig{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    text-align: left;
+    color: #a5ddfbf9;
+    font-weight: bold;
+    line-height: 1.2; 
+}
+.textsmall{
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
+    text-align: justify;
+    color: #d8d5fb;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lora', serif;
+}
+.btn{
+    padding: 11px 20px;
+    margin: 10px 7px;
+    border-radius: 8px;
+    background-color: #85d4fff9;
+    color: #020633;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    font-size: 15px;
+    margin-bottom: 0px ;
+}
+
+/*HOME CONTENT ANIMATION*/
+.textbig{
+    overflow: hidden; /* Hide overflow to make the animation appear as typing */
+    white-space: nowrap; /* Keep the text in a single line */
+    margin: 0; 
+    letter-spacing: 1px; 
+    animation-name: typing;
+    animation-duration: 1.2s;
+    animation-timing-function: steps(200, end);
+    animation-iteration-count: 1;
+    &:nth-child(1) {
+        animation-delay: 0s;
+    }
+    
+    &:nth-child(2) {
+        visibility: hidden;
+        animation-delay: 0.9s;
+        animation-fill-mode: forwards;
+    }
+}
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to { 
+        width: 100%; 
+        visibility: visible; 
+    }
+}
+
+/*HOME IMG*/
+.secondhalf{
+    width: 50%;
+}
+.secondhalf img{
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-right: 400px;
+}
+
+/*ABOUT*/
+.secondmain{
+    background: url(bg3.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+/*ABOUT SECTIONS*/
+.sect{
+    /* height: 350px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    margin: auto;
+    margin-right: 0px;
+    border-bottom: 2px dashed #a5ddfbf9;
+}
+.leftsect{
+    flex-direction: row-reverse;
+    margin-left: 0px;
+}
+.third{
+    border: none;
+}
+
+/*ABOUT SECTIONS CONTENT*/
+.para{
+    padding: 0px 65px;
+}
+
+/*ABOUT SECTIONS HEADING*/
+.sectiontag{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.sectionsubtag{
+    color: white;
+    text-align: justify;
+    padding: 20px 0px;
+}
+
+/*ABOUT SECTIONS IMAGES*/
+.thumbnail{
+    width: 40%;
+}
+.thumbnail img{
+    width: 350px;
+    height: 350px;
+    margin: 10px 15px; 
+}
+
+/*CONTACT BG*/
+.contact{
+    border-top: 2px solid #a5ddfbf9;
+    background: url(bg.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    /* height: 85vh; */
+}
+
+/*CONTACT HEADING*/
+.conthead{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    padding: 53px 0px 20px 0px;
+    text-align: center;
+    color: #a5ddfbf9;
+}
+
+/*CONTACT FORM*/
+.form{
+    max-width: 350px;
+    margin: auto;
+    text-align: center; /* Center the content horizontally */
+}
+.forminput{
+    width: 96%;
+    margin: 10px 0px;
+    font-size: 17px;
+    padding: 7px 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+.btn-con{
+    padding: 5px 20px;
+    margin: 10px 7px;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #85d4fff9;
+    color: #020633;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: auto; /* Center the button horizontally */
+}
+.btn-con:hover{
+    font-size: 18px;
+}
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.burger{
+    display: none; /* Initially hide the burger icon */
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+/*--------------------------------------------------------------------*/
+
+/* FOR MAX WIDTH 1250 */
+@media only screen and (max-width: 1250px){
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 300px;
+    }
+    .navlist{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlist li {
+        margin: 12px ; 
+    }
+    .navlist li a {
+        font-size: 14px;
+        padding: 9px ;
+    }
+    .navlist li a:hover{
+        color: #020633;
+        background-color:#a5ddfbf9;
+        border-radius: 20px; 
+        font-size: 16px;
+        padding: 5px 15px;
+    }
+    .rightnav{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 55px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .boxmain{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding: 0px;
+    }
+    .firsthalf{
+        margin: 20px;
+        width: 80%;
+    }
+    .secondhalf{
+        width: 70%;
+    }
+    .secondhalf img{
+        width: 65%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    .sect{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .para{
+        padding: 20px;
+        padding-top: 00px;
+    }
+    .thumbnail {
+        width: 100%;
+    }
+    .thumbnail img {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+    .forminput{
+        width: 75%;
+    }
+}
+
+/* FOR MAX WIDTH 720 */
+@media only screen and (max-width: 720px) {
+    .textbig {
+        font-size: 24px; 
+    }
+    .textsmall{
+        font-size: 14px;
+    }
+    .sectiontag{
+        font-size: 24px;
+    }
+    .sectionsubtag{
+        font-size: 14PX;
+    }
+    .thumbnail img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* FOR MAX WIDTH 530 */
+@media only screen and (max-width: 530px) {
+    .logo img{
+        width: 125px;
+        height: 38px;
+        margin: 10px 5px;
+    }
+    .textbig {
+        font-size: 12px; 
+    }
+    .textsmall{
+        font-size: 10px;
+    }
+    .sectiontag{
+        font-size: 18px;
+    }
+    .sectionsubtag{
+        font-size: 10PX;
+    }
+    .secondhalf img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .btn{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .btn:hover{
+        font-size: 15px;
+        margin-bottom: 0px ;
+    }
+    .conthead{
+        font-size: 28px;
+        padding-top: 40px;
+    }
+    .forminput{
+        font-size: 14px;
+    }
+    .btn-con{
+        font-size: 12px;
+    }
+    .btn-con:hover{
+        font-size: 15px;
+    }
+}
